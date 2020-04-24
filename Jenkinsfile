@@ -3,10 +3,7 @@ pipeline{
         jdk 'myjava'
         maven 'mymaven'
     }
-    agent none
-    stages{
-        stage('checkout'){
-            
+   
             agent any
             steps{
                 git 'https://github.com/devops-trainer/DevOpsClassCodes.git'
