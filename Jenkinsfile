@@ -1,7 +1,7 @@
 pipeline{
     tools{
         jdk 'myjava'
-        maven 'mymavan'
+        maven 'mymaven'
     }
     agent none
     stages{
