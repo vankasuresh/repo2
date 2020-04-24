@@ -1,13 +1,14 @@
 pipeline{
     tools{
         jdk 'myjava'
-        maven 'mymaven'
+        maven 'mymavan'
     }
-    agent any
-    steps{
-    git 'https://github.com/devops-trainer/DevOpsClassCodes.git'
+    
+            agent any
+            steps{
+                git 'https://github.com/devops-trainer/DevOpsClassCodes.git'
             
-    }
+            }
             
         }
         stage('compile'){
